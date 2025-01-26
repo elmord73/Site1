@@ -26,5 +26,26 @@
         <h1>Welcome to My Website!</h1>
         <p>This is a simple site hosted for free on Netlify.</p>
     </div>
+	<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DHu00000GOLvy',
+				'AI_Deployment',
+				'https://se1737553722800.my.site.com/ESWAIDeployment1737899478949',
+				{
+					scrt2URL: 'https://se1737553722800.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://se1737553722800.my.site.com/ESWAIDeployment1737899478949/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 </body>
 </html>
+
